@@ -5,3 +5,9 @@ embedding_size: 64
 model: BPR 
 eval_setting: TO_LS,full
 metrics: ["Recall", "MRR", "NDCG", "Hit", "Precision"]
+train_neg_sample_args: {'distribution': 'uniform'}
+eval_args:
+  split: {'RS': [8, 1, 1]}
+  group_by: 'user'
+  order: RO
+  mode: 'full'
