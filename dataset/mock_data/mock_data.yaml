@@ -1,0 +1,6 @@
+field_separator: "," 
+USER_ID_FIELD: user_id
+ITEM_ID_FIELD: song_id
+LISTENING_FIELD: listening_count
+load_col:
+  inter: [user_id, song_id, listening_count]
